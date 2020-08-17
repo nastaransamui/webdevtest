@@ -1,0 +1,20 @@
+  var self = this;
+  var a = {
+  greeting: 'Hello, ',
+  say: function() {
+  jQuery.each(this.names, function(index, value) {
+  alert(self.a.greeting + value);
+  });
+  }
+  };
+  var b = {
+  names: ['Champ', 'Jang', 'Else']
+  };
+  let newObject = {
+    ...a,
+    ...b,
+  }
+  let ObjectAssign =Object.assign(a, b);
+  console.log(newObject)
+  console.log(ObjectAssign)
+  newObject.say();

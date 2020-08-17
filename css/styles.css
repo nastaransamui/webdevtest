@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+#navbar {
+  overflow: hidden;
+  background-color:#413a60;
+  opacity: 0.8;
+  color: #ffffff;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #984f7e;
+  color: #ffffff;
+}
+
+#navbar a.active {
+  background-color: #984f7e;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.form-content {
+  width: 50%;
+  display: flex; 
+  flex-direction: column;
+}
+
+.form-inputs {
+  float: right;  
+  margin-bottom: 10px;
+}
+
+.form-font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-submit {
+  float: right;
+  clear:right;
+}
+
+.content {
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+   flex-direction: row;
+}
+
+.flowers {
+  margin-top: 30px;
+  max-height: 50vmax;
+  float: right;
+}
+
+.birds  {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display:block;
+}
+.birds img {
+  width: 100%;
+}
+
+@media screen and (max-width: 785px) {
+  .content {
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+     flex-direction: column;
+  }
+  .flowers {
+    width: 50vmin;
+    align-self: center;
+  }
+
+  .birds img {
+    object-fit: cover;
+    object-position: 70% 50%;
+  width: 100%;
+  height: 337px;
+  }
+}
+
+.dialog_Not_show{
+  display: none; 
+}
+
+.dialog_show{
+  display: flex;
+  flex-direction: row;
+}
+
+.body-style {
+  padding: 16px;
+}
